@@ -2,6 +2,7 @@ package aleix.etv.usuario;
 
 import lombok.Data;
 
+
 @Data
 public class UsuarioDto {
     private Long id;
