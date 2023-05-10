@@ -1,0 +1,103 @@
+El esquema SQL actual se ha diseñado para respaldar un sistema de alquiler vacacional de una única propiedad ubicada en Artà, Mallorca. Veamos una descripción completa del esquema:
+
+Tabla "usuarios":
+
+Almacena información sobre los usuarios registrados en el sistema.
+Contiene las columnas "id", "nombre", "correo", "contraseña", "id_poblacion", "num_reservas", "num_comentarios", "valoracion_dueño", "telefono", "tipo_identificacion", "num_identificacion", "fecha_registro", "verificado" y "descripcion".
+Permite el registro de usuarios con datos como nombre, correo electrónico, contraseña, población de residencia, número de reservas, número de comentarios, valoración del propietario, teléfono, tipo de identificación, número de identificación, fecha de registro, verificación y una descripción adicional.
+Permite conocer información relevante sobre los usuarios, como su historial de reservas, valoraciones y datos de contacto.
+Puede mejorarse incluyendo más campos según las necesidades específicas del sistema, como información adicional del perfil del usuario.
+Tabla "paises":
+
+Almacena los países disponibles en el sistema.
+Contiene las columnas "codigo_pais" y "nombre".
+Permite registrar los países a los que pertenecen las poblaciones.
+Brinda información relevante sobre los países para asociarlos con las poblaciones y las divisas.
+Tabla "provincias":
+
+Almacena las provincias relacionadas con los países en el sistema.
+Contiene las columnas "id", "nombre" y "codigo_pais".
+Permite registrar las provincias asociadas a los países.
+Permite la vinculación de las provincias con las poblaciones y los usuarios.
+Tabla "poblacion":
+
+Almacena las poblaciones relacionadas con las provincias.
+Contiene las columnas "id", "nombre" y "id_provincia".
+Permite registrar las poblaciones a las que pertenecen los usuarios.
+Permite la vinculación de las poblaciones con las provincias y los usuarios.
+Tabla "divisas":
+
+Almacena las divisas disponibles en el sistema.
+Contiene las columnas "id", "nombre", "simbolo", "tasa_cambio" y "valor_divisa_euros".
+Permite registrar diferentes divisas utilizadas en el sistema.
+Proporciona información sobre las tasas de cambio y los valores de las divisas en euros.
+Tabla "caracteristica_propiedad":
+
+Almacena información sobre las características de la propiedad en alquiler.
+Contiene las columnas "id", "id_usuario", "titulo", "descripcion", "capacidad", "ubicacion", "precio" y "caracteristica_activa".
+Permite registrar detalles específicos de la propiedad, como su capacidad, ubicación, precio y estado de activación.
+Vincula la propiedad con el usuario propietario.
+Tabla "reservas":
+
+Almacena la información de las reservas realizadas por los usuarios.
+Contiene las columnas "id", "id_car
+
+
+
+
+DESCRIPCION campos
+
+Por supuesto, aquí tienes una descripción detallada de cada tabla y columna del código SQL hasta el momento:
+
+Tabla "usuarios":
+
+Columnas:
+"id" (int): identificador único del usuario.
+"nombre" (varchar(100)): nombre del usuario.
+"correo" (varchar(100)): dirección de correo electrónico del usuario.
+"contraseña" (varchar(100)): contraseña del usuario.
+"id_poblacion" (int): clave externa que hace referencia a la población de residencia del usuario.
+"num_reservas" (int): número total de reservas realizadas por el usuario.
+"num_comentarios" (int): número total de comentarios realizados por el usuario.
+"valoracion_dueño" (decimal(4, 2)): valoración del usuario como inquilino según el propietario.
+"telefono" (varchar(20)): número de teléfono del usuario.
+"tipo_identificacion" (enum): tipo de número de identificación del usuario (DNI, NIF, Pasaporte, Cédula, Otro).
+"num_identificacion" (varchar(50)): número de identificación del usuario.
+"fecha_registro" (date): fecha en la que el usuario se registró en el sistema.
+"verificado" (boolean): indica si el usuario está verificado o no.
+"descripcion" (text): descripción adicional del usuario.
+Tabla "paises":
+
+Columnas:
+"codigo_pais" (char(3)): código de tres caracteres que representa el país.
+"nombre" (varchar(100)): nombre del país.
+Tabla "provincias":
+
+Columnas:
+"id" (int): identificador único de la provincia.
+"nombre" (varchar(100)): nombre de la provincia.
+"codigo_pais" (char(3)): código del país al que pertenece la provincia.
+Tabla "poblacion":
+
+Columnas:
+"id" (int): identificador único de la población.
+"nombre" (varchar(100)): nombre de la población.
+"id_provincia" (int): clave externa que hace referencia a la provincia a la que pertenece la población.
+Tabla "divisas":
+
+Columnas:
+"id" (int): identificador único de la divisa.
+"nombre" (varchar(100)): nombre de la divisa.
+"simbolo" (varchar(10)): símbolo o código de la divisa.
+"tasa_cambio" (decimal(10, 4)): tasa de cambio de la divisa.
+"valor_divisa_euros" (decimal(10, 4)): valor de la divisa en euros.
+Tabla "caracteristica_propiedad":
+
+Columnas:
+"id" (int): identificador único de la característica de la propiedad.
+"id_usuario" (int): clave externa que hace referencia al propietario de la propiedad.
+"titulo" (varchar(100)): título de la propiedad.
+"descripcion" (text): descripción de la propiedad.
+"capacidad" (int): capacidad de la propiedad.
+"ubicacion" (varchar(100)): ubicación de la propiedad.
+"precio" (decimal(10, 2)): precio de la propiedad.

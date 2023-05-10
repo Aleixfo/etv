@@ -1,0 +1,11 @@
+Nuestra idea de negocio se basa en ofrecer una experiencia de alquiler vacacional en una casa mallorquina grande de 3 pisos ubicada en Artà, Mallorca. La casa tiene capacidad para 8 personas y está diseñada para brindar comodidad y autenticidad a los turistas que visitan la zona.
+
+Como programador web, hemos decidido crear una página web propia para que los clientes puedan alquilar la casa directamente, sin necesidad de utilizar plataformas de terceros como Airbnb. La página web permitirá a los clientes explorar la propiedad, ver detalles como el título, descripción, ubicación y precio, y realizar reservas de forma conveniente.
+
+Nuestro enfoque es brindar flexibilidad a los clientes, por lo que la página web ofrecerá dos opciones: los clientes podrán crear una cuenta y acceder a funciones adicionales como llevar un registro de reservas y comentarios, recibir valoraciones por parte del dueño de la casa y personalizar su perfil con información como país de procedencia, número de teléfono y número de identificación. Además, también se permitirá a los clientes realizar reservas sin necesidad de registrarse, simplificando el proceso para aquellos que prefieren una experiencia más rápida y sin complicaciones.
+
+Para adaptarnos a las necesidades de nuestros clientes internacionales, hemos incorporado la opción de pago en diferentes divisas. Los clientes podrán seleccionar la divisa de su elección al momento de realizar la reserva, lo que les brindará comodidad al pagar en su moneda local.
+
+A medida que avanzamos, hemos establecido un esquema de base de datos sólido que abarca tablas para usuarios, propiedades, reservas, comentarios, países, provincias y divisas. Esta estructura nos permitirá almacenar información relevante y gestionar eficientemente las reservas, comentarios y datos de los clientes.
+
+Con esta idea de negocio, esperamos proporcionar una experiencia de alquiler vacacional única y personalizada a los turistas que visitan Artà, Mallorca. Estamos emocionados de seguir trabajando en la implementación de la página web y estamos comprometidos en brindar un servicio de calidad a nuestros futuros clientes. ¡Estamos ansiosos por ver cómo se desarrolla nuestro proyecto y retomar donde lo dejamos en los próximos días!

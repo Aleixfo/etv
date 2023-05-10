@@ -1,0 +1,26 @@
+Requisitos ETV
+
+1. Mostrar información detallada sobre la casa, incluyendo características, servicios y fotografías.
+2. Calendario de disponibilidad y tarifas por temporada.
+3. Formulario de reserva para que los clientes puedan solicitar una reserva específica.
+4. Página de contacto para consultas y preguntas.
+5. Integración con métodos de pago seguros para realizar los pagos.
+6. Opción para que los clientes dejen reseñas y comentarios sobre su estancia.
+7. Versión en varios idiomas para atraer a una audiencia internacional.
+8. Los usuarios pueden reservar la casa mediante dos formas, dandose de alta o sin darse de alta
+
+8.1 -> 
+Reserva sin registro:
+
+Crea un formulario de reserva en el que los usuarios puedan ingresar la información necesaria para completar la reserva, como fechas de llegada y salida, número de huéspedes, información de contacto, etc.
+Implementa la lógica necesaria en el backend para procesar y almacenar esta información de reserva.
+Ofrece la opción de pago seguro a través de pasarelas de pago como PayPal, Stripe u otras opciones populares.
+Una vez que la reserva se haya completado con éxito, muestra una confirmación al usuario y envía un correo electrónico con los detalles de la reserva.
+
+Reserva con registro:
+
+Permite a los usuarios registrarse en tu página web creando una cuenta con su información personal.
+Después de crear una cuenta, los usuarios pueden iniciar sesión en el sistema utilizando su dirección de correo electrónico y contraseña.
+Proporciona un panel de usuario donde los clientes puedan gestionar sus reservas anteriores, ver el historial de pagos y realizar cambios en las fechas de la reserva, si es posible.
+En el formulario de reserva, ofrece la opción de iniciar sesión en lugar de ingresar manualmente la información de contacto si el usuario ya está registrado.
+Almacena la información de reserva asociada con la cuenta del usuario para facilitar la gestión futura y proporcionar una experiencia personalizada.
