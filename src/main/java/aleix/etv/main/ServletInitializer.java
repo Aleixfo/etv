@@ -1,5 +1,6 @@
-package aleix.etv;
+package aleix.etv.main;
 
+import aleix.etv.main.EtvApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
